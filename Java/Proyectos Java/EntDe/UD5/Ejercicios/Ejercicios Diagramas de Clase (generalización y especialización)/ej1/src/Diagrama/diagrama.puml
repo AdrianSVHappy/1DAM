@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com
+
+Gerente --up> Empleado
+Programador --up> Empleado
+
+
+class Empleado{
+    - nombre : String
+    - salario : float
+
+    + trabajando() : String
+}
+
+class Gerente {
+    - departamento : String
+}
+
+class Programador{
+    - lenguajeProg : String
+}
+
+
+@enduml

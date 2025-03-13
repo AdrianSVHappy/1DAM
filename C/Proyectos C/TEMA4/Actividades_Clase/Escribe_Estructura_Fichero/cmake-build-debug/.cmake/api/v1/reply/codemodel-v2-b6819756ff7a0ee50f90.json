@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Escribe_Estructura_Fichero",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Escribe_Estructura_Fichero::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Escribe_Estructura_Fichero-Debug-5b326a9c4b60f0730c17.json",
+					"name" : "Escribe_Estructura_Fichero",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/adria/Desktop/Proyectos C/TEMA4/Actividades_Clase/Escribe_Estructura_Fichero/cmake-build-debug",
+		"source" : "C:/Users/adria/Desktop/Proyectos C/TEMA4/Actividades_Clase/Escribe_Estructura_Fichero"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

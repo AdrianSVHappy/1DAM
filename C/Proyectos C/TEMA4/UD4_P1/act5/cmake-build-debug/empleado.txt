@@ -1,0 +1,10 @@
+ID: 1
+NOMBRE: Adri
+EDAD: 12
+SUELDO: 12.00 E
+----------------------------
+ID: 2
+NOMBRE: Pepe
+EDAD: 12
+SUELDO: 2.00 E
+----------------------------

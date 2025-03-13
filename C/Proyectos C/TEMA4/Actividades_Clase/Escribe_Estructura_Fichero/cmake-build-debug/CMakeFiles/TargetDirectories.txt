@@ -1,0 +1,3 @@
+C:/Users/adria/Desktop/Proyectos C/TEMA4/Actividades_Clase/Escribe_Estructura_Fichero/cmake-build-debug/CMakeFiles/Escribe_Estructura_Fichero.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA4/Actividades_Clase/Escribe_Estructura_Fichero/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA4/Actividades_Clase/Escribe_Estructura_Fichero/cmake-build-debug/CMakeFiles/rebuild_cache.dir

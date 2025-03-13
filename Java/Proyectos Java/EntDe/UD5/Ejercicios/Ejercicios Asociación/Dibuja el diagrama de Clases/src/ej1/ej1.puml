@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com'
+
+
+/'Zero or One	|o--
+  Exactly One	||--
+  Zero or Many	}o--
+  One or Many	}|--
+'/
+
+/'Modela un sistema de relaciones familiares. Cada persona puede tener uno o más padres que también
+son personas en la misma familia. Cada persona tiene un nombre, una fecha de nacimiento y puede tener
+hermanos.'/
+
+
+Persona }o---|{ "Padre" Persona
+Persona }o--o{ "Hermanos" Persona
+
+class Persona{
+    - nombre : String
+    - fnac : String
+}
+
+
+
+@enduml

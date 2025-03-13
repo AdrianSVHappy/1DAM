@@ -1,0 +1,24 @@
+OJO CON LOS FOREACH: que no sirve para modificar (solo es un get)
+
+Clase Articulo:
+    los identificadores deben ser STRING (imaginate que es un DNI)
+    en el javaDoc, al ddcumentar los parametro, poner al final su tipo
+
+Clase Cliente:
+    * El metodo de que te pide en el enunciado, es hacer un toString
+
+Clase Detalle:
+    En el constructor al multiplicar el precio de todos los productos, se multiplica un int (cantidad) por el precio de
+    la unidad (float), por lo que estaría más correcto si se usa un casting de float para la cantidad
+
+
+Clase factura:
+    Como hacer una constante (static final int NUM = 5)
+    En la clase factura, los articulos se almacenan dentro de cada elemento del vector "Linea de detalle"
+    Metodos del profe:
+    - nuevaLinea -> Añadir articulos a la Factura X -> es el que pide en el primer metodo de facturas
+    -* totalSinImp (return float) -> Calcula el precio total sin impuestos V
+    -* totalConImp (return float) -> Calcula el precio total con impuestos V
+    - totalImp (return float) -> Calcula el total de impuesto E -> Como lo habia hecho depende de que hayamos usado antes
+        otros metodos, lo que la hace menos correcta. Conclución, hay que calcularlo articulo a articulo, no con los totales.
+

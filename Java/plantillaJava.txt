@@ -1,0 +1,183 @@
+MAIN
+-Ejemplo de constantes (arriba del public static void main(String[] args))
+static final int N = 50;
+
+-Scanner (arriba del public static void main(String[] args))
+static Scanner sc = new Scanner(System.in);
+
+-Funciones (despues del public static void main(String[] args))
+static devuelve funcion(parametros)
+
+-funciones especiales y propias
+
+------------------FFLUSH
+
+    /**
+     * Limpia el scanner, para que en su proximo uso se puedan meter datos correctamente
+     */
+    static void limpiar(){
+        sc.nextLine();
+    }
+
+------------------PAUSE
+
+    /**
+     * Pausa el programa hasta que el cliente pulsa intro
+     */
+    static void pausar(){
+        System.out.println("\nPulse intro para continuar...");
+        sc.nextLine();
+    }
+
+------------------ORDENAR
+    /**
+     * Ordena cualquier vector, dejando solo los objetos que no son nulos
+     * @param vector El vector que se quiere ordenar : Object
+     */
+    static void ordenar(Object[] vector){
+        Object[] aux = new Object[vector.length];
+        int contador = 0;
+
+        for (Object obj : vector) {
+
+            if(obj != null){
+                aux[contador] = obj;
+                contador++;
+            }
+        }
+
+        System.arraycopy(aux, 0, vector, 0, (vector.length));
+    }
+
+
+------------------BUSCAR STRING
+    /**
+     * Busca la posición de un objeto en un vector a partir de su atributo identificador
+     * @param vector El vector donde se realiza la busqueda : Object
+     * @param id El identificador que se busca : String
+     * @return (int) La posición en la que se encuentra el objeto dentro del vector | si devuelve -1 significa que no se ha encontrado
+     */
+    static int buscar (Object[] vector, String id){
+        int pos = 0;
+
+        for (Object obj : vector){
+
+            if (obj == null)
+                continue;
+
+            if(obj.getId.equals(id))
+                break;
+
+            pos ++;
+        }
+
+        if (pos >= vector.length)
+            pos = -1;
+
+        return pos;
+    }
+
+
+------------------BUSCAR INT
+    /**
+     * Busca la posición de un objeto en un vector a partir de su atributo identificador
+     * @param vector El vector donde se realiza la busqueda : Object
+     * @param id El identificador que se busca : int
+     * @return (int) La posición en la que se encuentra el objeto dentro del vector | si devuelve -1 significa que no se ha encontrado
+     */
+    static int buscar (Object[] vector, int id){
+        int pos = 0;
+
+        for (Object obj : vector){
+
+            if (obj == null)
+                continue;
+
+            if(obj.getId == id)
+                break;
+
+            pos ++;
+        }
+
+        if (pos >= vector.length)
+            pos = -1;
+
+        return pos;
+    }
+
+
+------------------BUSCAR NULL
+    /**
+     * Busca la primera posición del vector vacia para poder introducir información
+     * @param obj el vector en el que se busca : Object
+     * @return (int) la posición libre | si devuelve -1 significa que no se ha encontrado
+     */
+    static int huecoLibre(Object[] obj){
+        int pos = 0;
+
+        for(Object o : obj){
+            if (o == null){
+                break;
+            }
+            pos++;
+        }
+
+        if(pos >= obj.length){
+            pos = -1;
+        }
+
+        return pos;
+    }
+
+------------------LISTAR
+    /**
+     * Almacena la información de los objetos que no son null y los almacena en un String
+     * @param obj el vector en el que se busca : Object
+     * @return (String) Lista de información
+     */
+    public static String listar(Object[] obj){
+        String respuesta = "";
+
+        for(Object o : obj){
+            if(o != null)
+                respuesta += o + "\n";
+        }
+
+        return respuesta;
+    }
+
+
+CLASES
+
+El orden es: Atributos de la clase, atributos de la instancia, constructor, gets y sets, toString, otros metodos de la clase, otros metodos de la instancia
+
+Los atributos son privados y los metodos son publicos*, si el metodo solo lo utiliza la clase como paso intermedio debe ser privado.
+
+El toString no se debe dejar por defecto
+
+
+HERENCIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+public class ClaseHija extends ClasePadre 
+
+Interface -> public class Clase implements Interface
+
+
+getter y setter con HERENCIA
+en una clase
+((Clase)this).atributo/metodo
+
+en el main
+((Clase)objeto).atributo/metodo
+
+ATRIBUTOS
+
+
+
+
+
+
+METODOS
+
+JAVADOC
+

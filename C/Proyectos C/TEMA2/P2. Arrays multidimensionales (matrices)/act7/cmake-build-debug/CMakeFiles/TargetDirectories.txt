@@ -1,0 +1,3 @@
+C:/Users/adria/Desktop/Proyectos C/TEMA2/P2. Arrays multidimensionales (matrices)/act7/cmake-build-debug/CMakeFiles/act7.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA2/P2. Arrays multidimensionales (matrices)/act7/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA2/P2. Arrays multidimensionales (matrices)/act7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

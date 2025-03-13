@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com
+
+Marco ||--uo Cuadro
+Cristal ||--uo Cuadro
+Lamina ||--uo Cuadro
+
+
+class Cuadro {
+    - propietario : String
+    - precio : float
+    - alaVenta : boolean
+
+    + comprar(nuevoPropietario : String)
+    + ponerAlaVenta()
+    + quitarDeLaVenta()
+}
+
+class Marco {
+    - tipo : String
+    - grosor : int
+}
+
+class Cristal {
+    - color : String
+    - grosor : int
+}
+
+class Lamina {
+    - id : String
+    - autor : String
+    - tipoPintura : String
+}
+
+@enduml

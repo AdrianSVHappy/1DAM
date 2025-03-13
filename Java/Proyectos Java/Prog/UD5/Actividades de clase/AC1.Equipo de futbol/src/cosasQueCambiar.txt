@@ -1,0 +1,32 @@
+ /El orden para poner los metodos son: constructor, getter y setter, toString, Mis metodos
+| Los comentarios del javaDoc no se usan para las variables, ni para los constructores, gets y sets
+| A la hora de poner constantes (private final static int N = 5;)
+| Hacer las cosas mas simples posibles: a la hora de mostrar un mensaje por ejemplo
+ \Los atributos y metodos estaticos son publicos, no se hacen Getter ni Setter
+
+Importante poner  "@Override"  arriba del metodo toSting, es para que el compilador te comunique si el metodo que hemos
+ escrito no existe por defecto (Lo usamos para comprobar que está bien escrito el nombre del metodo)
+
+
+Jugador.java:
+-El dorsal es como el DNI del jugador dentro del equipo. (para que nos sea más facil acostumbrarnos a usar los ArratList
+ proximamente que no tienen indice (vector[i])
+-i idea para crear jugadores, creas el new jugador en el main y lo pasas como parametro a un metodo del Equipo.
+
+
+Equipo.java:
+ /-(nose)el enum se usa a la hora de escoger, para que el usuario lo tenga renstringido, pero a la hora de introducir la
+|  información en el equipo segun el enum elegido se mete un string relacionado
+| -Los enum se ponen en un .java a parte y propio, que se puede crear dando click derrecho en el navegador del proyecto
+| -i Una posible idea es que es que el enum sea privado y que en el constructor te pida un int o algo así para poder
+ \ relacionarlo con el enum ya denrto del metodo del objeto
+
+
+Main.java:
+ /-M->Si declaramos la variable de tipo Scanner, la declaramos directamente en la clase(fuera del main)  como static,
+|    para que sea accesible en to.do el programa
+| -Tambien podemos hacer el programa para que todos los scanners se encuentren en el main y que dentro de los metodos
+ \ to.dos los datos se pasen por parametros
+-i idea para dar de alta, establecer mejor jugador y km recorridos, se hace al equipo entero, no jugador a jugador
+-Cuando queramos poner "pause"s podemos poner nextLine() con un mensaje de que se debe dar intro para continuar.
+

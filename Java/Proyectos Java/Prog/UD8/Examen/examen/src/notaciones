@@ -1,0 +1,6 @@
+
+linea 139: es más correcto hacerlo en dos try-catch, uno para cada fichero cerrado, por si hay algun problema sea más
+facil de identificar donde está el error
+
+linea 28: es más correcto que la existencia del fichero se comprueba en el metodo donde se introduce la información en este
+

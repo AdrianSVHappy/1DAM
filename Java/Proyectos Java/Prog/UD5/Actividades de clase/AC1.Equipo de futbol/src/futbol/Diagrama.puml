@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com
+
+
+Entrenador -> Jugador
+
+class Entrenador{}
+
+class Jugador{
+-nombre : String
+-apellido : String
+-noDorsal : int
+-mejorPartido : int
+-noKm : int
+-noPartido : int
+
++Jugador(String nombre, String apellido, int noDorsal)
++mejorDelPartido() : void
++anyadirKm(int km) : void
++mediaKm((int km) : float
++toString() : String
+
+}
+
+@enduml

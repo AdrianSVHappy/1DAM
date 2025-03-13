@@ -1,0 +1,170 @@
+DOCUMENTACIÓN
+Guia: https://www.tutorialspoint.com/cprogramming/index.htm
+Librerias: https://www.tutorialspoint.com/c_standard_library/index.htm
+Formatos: https://www.tutorialspoint.com/format-specifiers-in-c
+-----------------------------------------------------------PLANTILLA BASICA-----------------------------------------------------------
+//Librerias
+#include <stdio.h>
+#include <stdlib.h>
+
+/*Enunciado*/
+
+//Constantes
+#define S 20
+
+//Estructuras
+
+
+//Prototipos
+
+
+//Main
+int main(void){
+    //Variables
+
+    //Cuerpo
+
+    //Fin
+    return 0;
+}
+
+//Funciones
+
+-----------------------------------------------------------PLANTILLA BASICA-----------------------------------------------------------
+----------------------------------------------------------------RANDOM----------------------------------------------------------------
+//Librerias +
+#include <time.h> //Libreria necesaria para usar las funciones rand() y srand().
+
+//Variables +
+time_t t; //Declaramos la variable tiempo para la creación de la semilla.
+
+//Cuerpo +
+srand((unsigned) time(&t));//Generamos la semilla para la función random.Se coloca al principio del Cuerpo.
+
+-Ejemplo:
+
+num = rand() % 51; //Genera un numero random entre 0-50
+
+
+----------------------------------------------------------------RANDOM----------------------------------------------------------------
+----------------------------------------------------------------STRING----------------------------------------------------------------
+
+//Librerias +
+#include <string.h> //Libreria util para el tratamiento de strings
+
+-Info:
+En C string no es un tipo de variable simple, es una variable compleja, especificamente un vector de tipo character, este siempre termina en '\0'.
+
+-Ejemplos:
+--Copiar una string:
+strcpy(copia, original);//Entre dos variables.
+strcpy(copia, "Este es el texto que se va a copiar");//Entre una variable y una constante.
+
+--Ver el tamaño de una string(numero de caracteres):
+len = strlen(texto); //len es la variable (int) en la que se guardará el tamacho y texto (char[S]) es la string
+
+--Separar un string 
+strtok(source, separador)//separador = ";"
+
+strtok(NULL, separador)//Para seguir trozeando la misma cadena
+
+--De string a integer
+int = atoi(str)
+
+----------------------------------------------------------------STRING----------------------------------------------------------------
+-----------------------------------------------------------------SORT-----------------------------------------------------------------
+
+Algoritmo para ordenar una lista de menor a mayor o viceversa
+
+//Funciones
+void sorter (int *lista, int limite , char gear){
+    //Variables
+    int aux = 0;
+    int i=0, j=0;
+
+    //Cuerpo
+
+
+    //*De mayor a menor:
+    if(gear == ">"){
+
+        for(i = 0, i < (limite-1), i++){
+        
+            for(j = (i+1), j < limite, j++){
+
+                if(lista[i] < lista[j]){
+
+                    aux = lista[i];
+                    lista[i] = lista[j];
+                    lista[j] = aux;
+                }
+            }    
+        }
+    }
+    //*De menoe a mayor
+    else if(gear == "<"){
+
+        for(i = 0, i < (limite-1), i++){
+        
+            for(j = (i+1), j < limite, j++){
+
+                if(lista[i] > lista[j]){
+
+                    aux = lista[i];
+                    lista[i] = lista[j];
+                    lista[j] = aux;
+                }
+            }    
+        }
+    }
+    else{
+        puts("\nERROR. No has establecido correctamente el orden");
+    }
+    
+}
+
+-----------------------------------------------------------------SORT-----------------------------------------------------------------
+---------------------------------------------------------------FICHEROS---------------------------------------------------------------
+
+Para trabajar con ficheros:
+//Variables
+FILE *fichero = NULL;
+
+//Cuerpo
+//*Abrir fichero
+if((fichero = fopen("nombreReal", "Modo"))==NULL)
+    puts("\nERROR. El fichero no se ha abierto correctamente");
+else{
+    puts("\nFichero abierto");
+
+//*Trabajamos con el fichero
+
+//*Cerramos el fichero
+
+if(fclose(fichero))
+    puts("\nERROR. El fichero no se ha cerrado correctamente");
+else
+    puts("\nFichero cerrado");
+
+}
+
+
+-FICHEROS DE TEXTO (.TXT) Se almacenan strings
+
+--Characters
+
+-->Lectura
+
+
+
+-->Escritura
+
+--Strings
+
+
+-FICHEROS BINARIOS (.DAT) Se almacenan Estructuras
+
+
+
+
+---------------------------------------------------------------FICHEROS---------------------------------------------------------------

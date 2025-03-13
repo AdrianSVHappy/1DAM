@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\adria\Desktop\Proyectos Java\EntDe\UD4\Actividades\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3232447822.index
+170061167.index

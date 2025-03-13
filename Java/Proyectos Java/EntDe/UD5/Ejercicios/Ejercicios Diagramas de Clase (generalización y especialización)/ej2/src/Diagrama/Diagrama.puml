@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com'
+
+Coche --up> Vehiculo
+Moto --up> Vehiculo
+
+
+class Vehiculo{
+    - marca : String
+    - modelo : String
+
+    + toString() : String
+}
+
+class Coche {
+    - numPuerta : int
+
+    + toString() : String
+}
+
+class Moto{
+    - tipo : String
+
+    + toString() : String
+}
+
+@enduml

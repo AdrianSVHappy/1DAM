@@ -1,0 +1,18 @@
+Consejo: Cuando te dan un diagrama UML, implementalo y dejalo vacio desde el principio
+
+Mis observaciones:
+    - Has usados muchos "fflush" (uno en cada op del menu) para la proxima vez usalo despues de haber escogido la opción del menu
+    - poner en el return del toString, el string entre parentesis
+
+Menu/main:
+    - No has comentado los atributos
+
+
+crearCliente:
+    - Poner parentesis para el return (new Cliente ())
+
+crearFactura:
+    -[!] la comprobación de si se ha creado cliente no ha sido dentro del metodo, lo ha hecho directamente en el main ya que tiene que devolver algo
+
+verFactura:
+    - 

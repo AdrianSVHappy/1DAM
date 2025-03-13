@@ -1,0 +1,15 @@
+ID: 1
+NOMBRE: primero
+EDAD: 1
+SUELDO: 1.00 E
+----------------------------
+ID: 2
+NOMBRE: Segundo
+EDAD: 2
+SUELDO: 2.00 E
+----------------------------
+ID: 3
+NOMBRE: Tercero
+EDAD: 3
+SUELDO: 3.00 E
+----------------------------

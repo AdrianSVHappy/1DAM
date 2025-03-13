@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h> //Libreria necesaria para usar las funciones rand() y srand().
+
+/* Plantilla */
+
+int main() {
+    //Constantes
+    int const LIMITE =5;
+
+    //Variables
+    int mat[LIMITE][LIMITE], tras[LIMITE][LIMITE];
+
+    time_t t; //Declaramos la variable tiempo para la creación de la semilla.
+
+    //Cuerpo
+    srand((unsigned) time(&t));//Generamos la semilla para la función random.
+
+    for (int i = 0; i < LIMITE; ++i) {
+        for (int j = 0; j <LIMITE; ++j) {
+            mat[i][j] = rand() % 51;
+            tras[i][j]= 0;
+            printf("%d ",mat[i][j]);
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i < LIMITE; ++i) {
+        for (int j = 0; j < LIMITE; ++j) {
+            tras[j][i] = mat[i][j];
+        }
+
+    }
+    printf("\nvvvvvvvvvvvvvvvvvvvvvv\n\n");
+
+    for (int i = 0; i < LIMITE; ++i) {
+        for (int j = 0; j <LIMITE; ++j) {
+
+            printf("%d ",tras[i][j]);
+        }
+        printf("\n");
+    }
+
+    //Fin
+    return 0;
+}

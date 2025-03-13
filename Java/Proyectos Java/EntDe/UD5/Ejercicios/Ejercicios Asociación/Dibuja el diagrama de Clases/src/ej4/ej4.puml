@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com'
+
+
+/'Modela un sistema de gestión de proyectos en una empresa. Cada proyecto
+está compuesto por uno o más empleados, cada uno de los cuales tiene un rol
+específico en el proyecto. Cada empleado puede participar en uno o más proyectos.'/
+
+Proyecto ---> Dia
+
+
+class Proyecto
+
+class Empleado
+
+class Rol
+
+diamond Dia
+
+
+@enduml

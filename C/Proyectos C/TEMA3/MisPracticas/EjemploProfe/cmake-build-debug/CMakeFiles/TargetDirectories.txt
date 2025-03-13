@@ -1,0 +1,3 @@
+C:/Users/adria/Desktop/Proyectos C/TEMA3/MisPracticas/EjemploProfe/cmake-build-debug/CMakeFiles/EjemploProfe.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA3/MisPracticas/EjemploProfe/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA3/MisPracticas/EjemploProfe/cmake-build-debug/CMakeFiles/rebuild_cache.dir

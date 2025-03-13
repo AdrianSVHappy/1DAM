@@ -1,0 +1,83 @@
+@startuml
+'https://plantuml.com'
+
+/'Zero or One	|o--
+  Exactly One	||--
+  Zero or Many	}o--
+  One or Many	}|--
+'/
+
+TipoVehiculo --> Vehiculo
+Vehiculo }o-- Oficina
+TipoArma --> Arma
+Arma }o-- Oficina
+Agente }|-- Equipo
+Equipo }o-- Oficina
+
+
+enum TipoVehiculo{
+    TODOTERRENO, MOTO, COCHE
+}
+
+class Vehiculo{
+    /'Atributos'/
+    - matricula : String
+    - tipo : TipoVehiculo
+    - autonomia : float
+
+    /'Metodos'/
+    + conducir()
+    + rellenarTanque()
+
+}
+
+class Oficina{
+    /'Atrib'/
+    - LOCALIDAD : String
+    - sueldos  : float
+
+    /'Metodos'/
+    + crearEquipo()
+    + comprarArmas()
+    + comprarCoches()
+    + contratarAgente()
+    + irMision()
+    + TransferirAgente()
+}
+
+enum TipoArma{
+    RIFLE, CUCHILLO, PISTOLA
+}
+
+class Arma{
+    /'Atrib'/
+    - tipo : TipoArma
+    - balas : int
+
+    /'Metodos'/
+    + disparar() : boolean
+}
+
+class Agente{
+    /'Atrib'/
+    - nombre : String
+    - edad : int
+    - salario : float
+
+    /'Metodos'/
+    + toString() : String
+}
+
+class Equipo{
+    /'Atrib'/
+    - ultimoInforme : String
+
+    /'Metodos'/
+    + anyadirAgentes()
+    + generarInforme()
+
+}
+
+
+
+@enduml

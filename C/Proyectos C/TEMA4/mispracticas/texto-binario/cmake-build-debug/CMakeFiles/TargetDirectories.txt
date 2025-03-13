@@ -1,0 +1,3 @@
+C:/Users/adria/Desktop/Proyectos C/TEMA4/mispracticas/texto-binario/cmake-build-debug/CMakeFiles/texto_binario.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA4/mispracticas/texto-binario/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/adria/Desktop/Proyectos C/TEMA4/mispracticas/texto-binario/cmake-build-debug/CMakeFiles/rebuild_cache.dir
